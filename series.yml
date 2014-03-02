@@ -1,0 +1,53 @@
+series:
+  settings:
+    global:
+      propers: no
+    hires-tele:
+      propers: yes
+  lowres-tele:
+    - So You Think You Can Dance AU
+    - So You Think You Can Dance
+    - Bitten
+    - Tosh.0
+    - MasterChef US
+    - MasterChef Canada
+    - MasterChef Australia
+    - MasterChef New Zeland
+    - Top Chef
+    - Top Gear
+    - The Voice France
+    - The Amazing Race
+    - The Amazing Race Canada
+    - Survivor
+    - The Biggest Loser
+    - Under The Dome
+    - The Tomorrow People US
+    - Almost Human
+    - Big Brother
+    - Big Brother Africa
+    - Being Mary Jane
+    - Sleepy Hollow
+    - Revolution
+    - Reign
+    - Scandal
+    - Arrow
+    - The Blacklist
+    - Marvels Agents of S h i e l d
+    - Helix
+    - Atlantis
+    - Dracula 2013
+  hires-tele:
+    - Greys Anatomy
+    - Private Practice
+    - Fringe
+    - Supernatural
+    - Once Upon A Time
+    - Psych
+    - Lost Girl
+    - Falling Skies
+    - Being Human
+    - Being Human US
+    - Elementary
+    - Hacking the System
+    - Hannibal
+    - Game of Thrones

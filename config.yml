@@ -1,0 +1,45 @@
+templates:
+  global:
+    transmission:
+      host: localhost
+      port: 9091
+      username: username-here
+      password: password-here
+    rss:
+      url: url-here
+      url: url-here
+      all_entries: no
+  series:
+    include:
+      - series.yml
+    download: yes
+    remember_rejected: yes
+    exists_series: /share/Multimedia/series/{{series_name}}/s{{series_season}}/
+    set:
+      path: /share/Multimedia/series/{{series_name}}/s{{series_season}}/
+  anime:
+    include:
+      - anime.yml
+    download: yes
+    remember_rejected: yes
+    exists_series: /share/Multimedia/anime/{{series_name}}/s{{series_season}}/
+    set:
+      path: /share/Multimedia/anime/{{series_name}}/s{{series_season}}/
+
+tasks:
+  tele task:
+    template:
+      - series
+      - anime
+    series:
+      settings:
+        lowres-series:
+          quality: <720p
+          propers: 6 hours
+        hires-series:
+          quality: 720p
+          propers: 6 hours
+        lowres-anime:
+          quality: <720p
+        hires-series:
+          quality: 720p

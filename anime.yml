@@ -1,0 +1,11 @@
+series:
+  settings:
+    global:
+      propers: no
+  lowres-anime:
+    - Saint Seiya Omega
+    - Kill la Kill
+  hires-anime:
+    - Star Wars The Clone Wars
+    - The Legend Of Korra
+    - Naruto Shippuuden
