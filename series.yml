@@ -13,13 +13,15 @@ series:
     - MasterChef Canada
     - MasterChef Australia
     - MasterChef New Zeland
-    - Top Chef
+    - Top Chef:
+        exact: yes
     - Top Gear
     - The Voice France
     - The Amazing Race
     - The Amazing Race Canada
     - Survivor
-    - The Biggest Loser
+    - The Biggest Loser:
+        exact: yes
     - Under The Dome
     - The Tomorrow People US
     - Almost Human
@@ -51,3 +53,4 @@ series:
     - Hacking the System
     - Hannibal
     - Game of Thrones
+    - Grimm

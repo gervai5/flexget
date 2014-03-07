@@ -3,12 +3,12 @@ templates:
     transmission:
       host: localhost
       port: 9091
-      username: username-here
-      password: password-here
-    rss:
-      url: url-here
-      url: url-here
-      all_entries: no
+      username: admin
+      password: admin
+  tvfeeds:
+    include:
+      - tvfeeds.yml
+#    verify_ssl_certificates: no
   series:
     include:
       - series.yml
@@ -39,6 +39,8 @@ tasks:
         hires-series:
           quality: 720p
           propers: 6 hours
+    anime:
+      settings:
         lowres-anime:
           quality: <720p
         hires-series:
