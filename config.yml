@@ -5,11 +5,12 @@ templates:
       port: 9091
       username: admin
       password: admin
+#    quality: <720p
   tvfeeds:
     include:
       - tvfeeds.yml
 #    verify_ssl_certificates: no
-  series:
+  tvseries:
     include:
       - series.yml
     download: yes
@@ -17,7 +18,7 @@ templates:
     exists_series: /share/Multimedia/series/{{series_name}}/s{{series_season}}/
     set:
       path: /share/Multimedia/series/{{series_name}}/s{{series_season}}/
-  anime:
+  tvanime:
     include:
       - anime.yml
     download: yes
@@ -29,19 +30,17 @@ templates:
 tasks:
   tele task:
     template:
-      - series
-      - anime
+      - tvfeeds
+      - tvseries
+      - tvanime
     series:
       settings:
         lowres-series:
           quality: <720p
-          propers: 6 hours
         hires-series:
           quality: 720p
-          propers: 6 hours
-    anime:
-      settings:
+          propers: 4 hours
         lowres-anime:
           quality: <720p
-        hires-series:
+        hires-anime:
           quality: 720p

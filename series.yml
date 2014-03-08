@@ -1,10 +1,5 @@
 series:
-  settings:
-    global:
-      propers: no
-    hires-tele:
-      propers: yes
-  lowres-tele:
+  lowres-series:
     - So You Think You Can Dance AU
     - So You Think You Can Dance
     - Bitten
@@ -38,12 +33,14 @@ series:
     - Helix
     - Atlantis
     - Dracula 2013
-  hires-tele:
+    - Ali G Rezurection
+  hires-series:
     - Greys Anatomy
     - Private Practice
     - Fringe
     - Supernatural
-    - Once Upon A Time
+    - Once Upon A Time:
+        exact: yes
     - Psych
     - Lost Girl
     - Falling Skies
