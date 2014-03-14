@@ -1,16 +1,23 @@
 series:
   lowres-series:
-    - So You Think You Can Dance AU
+    - So You Think You Can Dance AU:
+        name_regexp: ^[Ss]o [Yy]ou [Tt]hink [Yy]ou [Cc]an [Dd]ance ([aA][uU]|[aA]ustralia)
     - So You Think You Can Dance
     - Bitten
     - Tosh.0
-    - MasterChef US
-    - MasterChef Canada
-    - MasterChef Australia
-    - MasterChef New Zeland
+    - MasterChef US:
+        name_regexp: ^[mM]aster ?[cC]hef [uU][Ss]
+    - MasterChef Canada:
+        name_regexp: ^[mM]aster ?[cC]hef [cC]anada
+    - MasterChef Australia:
+        name_regexp: ^[mM]aster ?[cC]hef ([aA][uU]|[aA]ustralia)
+    - MasterChef New Zealand:
+        name_regexp: ^[mM]aster ?[cC]hef ([Nn][Zz]|[Nn]ew [Zz]ealand)
     - Top Chef:
         exact: yes
     - Top Gear
+    - Top Gear US
+    - Top Gear Australia
     - The Voice France
     - The Amazing Race
     - The Amazing Race Canada
@@ -22,11 +29,14 @@ series:
     - Almost Human
     - Big Brother
     - Big Brother Africa
+    - Big Brother Canada:
+        exact: yes
     - Being Mary Jane
     - Sleepy Hollow
     - Revolution
     - Reign
-    - Scandal
+    - Scandal:
+        name_regexp: ^[Ss]candal ?(2012|[Uu][Ss])
     - Arrow
     - The Blacklist
     - Marvels Agents of S h i e l d
@@ -34,12 +44,15 @@ series:
     - Atlantis
     - Dracula 2013
     - Ali G Rezurection
+    - From Dusk Till Dawn The Series:
+        name_regexp: ^[Ff]rom [Dd]usk [Tt]ill? [Dd]awn( [Tt]he [Ss]eries)?
+    - Intelligence
   hires-series:
     - Greys Anatomy
     - Private Practice
     - Fringe
     - Supernatural
-    - Once Upon A Time:
+    - Once Upon a Time:
         exact: yes
     - Psych
     - Lost Girl
@@ -51,3 +64,7 @@ series:
     - Hannibal
     - Game of Thrones
     - Grimm
+    - Cosmos A Space Time Odyssey:
+        name_regexp: ^[Cc]osmos.[Aa] [Ss]pace.?[Tt]ime [Oo]dyssey
+    - Doctor Who 2005
+    - Continuum

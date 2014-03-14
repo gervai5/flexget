@@ -6,6 +6,11 @@ templates:
       username: admin
       password: admin
 #    quality: <720p
+    remember_rejected: yes
+    download: yes
+    exists_series:
+      - /share/Multimedia/anime/{{series_name}}/s{{series_season}}/
+      - /share/Multimedia/series/{{series_name}}/s{{series_season}}/
   tvfeeds:
     include:
       - tvfeeds.yml
@@ -13,34 +18,35 @@ templates:
   tvseries:
     include:
       - series.yml
-    download: yes
-    remember_rejected: yes
-    exists_series: /share/Multimedia/series/{{series_name}}/s{{series_season}}/
-    set:
-      path: /share/Multimedia/series/{{series_name}}/s{{series_season}}/
+    series:
+      settings:
+        lowres-series:
+          set:
+            path: /share/Multimedia/series/{{series_name}}/s{{series_season}}/
+          quality: <720p
+        hires-series:
+          set:
+            path: /share/Multimedia/series/{{series_name}}/s{{series_season}}/
+          quality: 720p
+          propers: 4 hours
+          timeframe: 4 hours
   tvanime:
     include:
       - anime.yml
-    download: yes
-    remember_rejected: yes
-    exists_series: /share/Multimedia/anime/{{series_name}}/s{{series_season}}/
-    set:
-      path: /share/Multimedia/anime/{{series_name}}/s{{series_season}}/
-
+    series:
+      settings:
+        lowres-anime:
+          set:
+            path: /share/Multimedia/anime/{{series_name}}/s{{series_season}}/
+          quality: <720p
+        hires-anime:
+          set:
+            path: /share/Multimedia/anime/{{series_name}}/s{{series_season}}/
+          quality: 720p !10bit
+ 
 tasks:
   tele task:
     template:
       - tvfeeds
       - tvseries
       - tvanime
-    series:
-      settings:
-        lowres-series:
-          quality: <720p
-        hires-series:
-          quality: 720p
-          propers: 4 hours
-        lowres-anime:
-          quality: <720p
-        hires-anime:
-          quality: 720p
