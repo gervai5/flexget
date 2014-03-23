@@ -36,7 +36,7 @@ templates:
         lowres-series:
           set:
             path: /share/Multimedia/series/{{series_name}}/s{{series_season}}/
-          quality: <720p
+          quality: <=720p
           target: <720p
 #          timeframe: 30 minutes
           timeframe: 2 hours
