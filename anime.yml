@@ -5,5 +5,7 @@ series:
   hires-anime:
     - Star Wars The Clone Wars
     - The Legend Of Korra
-    - Naruto Shippuuden
+    - Naruto Shippuuden:
+        from_group:
+          - horriblesubs
     - Samurai Flamenco

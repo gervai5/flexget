@@ -44,9 +44,11 @@ series:
     - Atlantis
     - Dracula 2013
     - Ali G Rezurection
-    - From Dusk Till Dawn The Series:
-        name_regexp: ^[Ff]rom [Dd]usk [Tt]ill? [Dd]awn( [Tt]he [Ss]eries)?
+    - From Dusk Till Dawn The Series
+#        name_regexp: ^[Ff]rom [Dd]usk [Tt]ill? [Dd]awn( [Tt]he [Ss]eries)?
     - Intelligence
+    - Believe:
+        exact: yes
   hires-series:
     - Greys Anatomy
     - Private Practice

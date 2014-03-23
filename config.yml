@@ -15,21 +15,6 @@ templates:
     include:
       - tvfeeds.yml
 #    verify_ssl_certificates: no
-  tvseries:
-    include:
-      - series.yml
-    series:
-      settings:
-        lowres-series:
-          set:
-            path: /share/Multimedia/series/{{series_name}}/s{{series_season}}/
-          quality: <720p
-        hires-series:
-          set:
-            path: /share/Multimedia/series/{{series_name}}/s{{series_season}}/
-          quality: 720p
-          propers: 4 hours
-          timeframe: 4 hours
   tvanime:
     include:
       - anime.yml
@@ -43,10 +28,28 @@ templates:
           set:
             path: /share/Multimedia/anime/{{series_name}}/s{{series_season}}/
           quality: 720p !10bit
+  tvseries:
+    include:
+      - series.yml
+    series:
+      settings:
+        lowres-series:
+          set:
+            path: /share/Multimedia/series/{{series_name}}/s{{series_season}}/
+          quality: <720p
+          target: <720p
+#          timeframe: 30 minutes
+          timeframe: 2 hours
+        hires-series:
+          set:
+            path: /share/Multimedia/series/{{series_name}}/s{{series_season}}/
+          quality: 720p
+          propers: 4 hours
+          timeframe: 4 hours
  
 tasks:
   tele task:
     template:
       - tvfeeds
-      - tvseries
       - tvanime
+      - tvseries
