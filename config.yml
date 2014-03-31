@@ -5,6 +5,7 @@ templates:
       port: 9091
       username: admin
       password: admin
+      path: /share/Multimedia/series/{{series_name}}/s{{series_season}}/
     remember_rejected: yes
     exists_series:
       - /share/Multimedia/anime/{{series_name}}/s{{series_season}}/
@@ -45,15 +46,6 @@ templates:
           quality: 720p
           propers: 4 hours
           timeframe: 4 hours
-  livesports:
-    include:
-      - sports.yml
-    series:
-      settings:
-        hires-sports:
-          set:
-            path: /share/Multimedia/series/{{series_name}}/s{{series_season}}/
-          quality: 720p
  
 tasks:
   tele task:
@@ -64,5 +56,4 @@ tasks:
   live task:
     template:
       - livefeeds
-      - livesports
     accept_all: yes
