@@ -2,7 +2,8 @@ series:
   lowres-series:
     - So You Think You Can Dance AU:
         name_regexp: ^[Ss]o [Yy]ou [Tt]hink [Yy]ou [Cc]an [Dd]ance ([aA][uU]|[aA]ustralia)
-    - So You Think You Can Dance
+    - So You Think You Can Dance:
+        exact: yes
     - Bitten
     - Tosh.0
     - MasterChef US:
@@ -17,12 +18,17 @@ series:
         exact: yes
     - Top Chef Canada:
         exact: yes
-    - Top Gear
-    - Top Gear US
-    - Top Gear Australia
+    - Top Gear:
+        exact: yes
+    - Top Gear US:
+        exact: yes
+    - Top Gear Australia:
+        exact: yes
     - The Voice France
-    - The Amazing Race
-    - The Amazing Race Canada
+    - The Amazing Race:
+        exact: yes
+    - The Amazing Race Canada:
+        exact: yes
     - Survivor
     - The Biggest Loser:
         exact: yes
@@ -38,8 +44,7 @@ series:
     - Sleepy Hollow
     - Revolution
     - Reign
-    - Scandal:
-        name_regexp: ^[Ss]candal ?(2012|[Uu][Ss])
+    - Scandal 2012
     - Arrow
     - The Blacklist
     - Marvels Agents of S h i e l d
@@ -48,10 +53,11 @@ series:
     - Dracula 2013
     - Ali G Rezurection
     - From Dusk Till Dawn The Series
-#        name_regexp: ^[Ff]rom [Dd]usk [Tt]ill? [Dd]awn( [Tt]he [Ss]eries)?
     - Intelligence
+    - Lets Make A Deal
     - Believe:
         exact: yes
+
   hires-series:
     - Greys Anatomy
     - Private Practice
@@ -62,8 +68,10 @@ series:
     - Psych
     - Lost Girl
     - Falling Skies
-    - Being Human
-    - Being Human US
+    - Being Human:
+        exact: yes
+    - Being Human US:
+        exact: yes
     - Elementary
     - Hacking the System
     - Hannibal

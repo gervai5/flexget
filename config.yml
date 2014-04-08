@@ -5,14 +5,12 @@ templates:
       port: 9091
       username: admin
       password: admin
-      path: /share/Multimedia/series/{{series_name}}/s{{series_season}}/
-    remember_rejected: yes
-    exists_series:
-      - /share/Multimedia/anime/{{series_name}}/s{{series_season}}/
-      - /share/Multimedia/series/{{series_name}}/s{{series_season}}/
   tvfeeds:
     include:
       - tvfeeds.yml
+  animefeeds:
+    include:
+      - animefeeds.yml
   livefeeds:
     include:
       - livefeeds.yml
@@ -29,6 +27,8 @@ templates:
           set:
             path: /share/Multimedia/anime/{{series_name}}/s{{series_season}}/
           quality: 720p !10bit
+    exists_series:
+      - /share/Multimedia/anime/{{series_name}}/s{{series_season}}/
   tvseries:
     include:
       - series.yml
@@ -46,14 +46,22 @@ templates:
           quality: 720p
           propers: 4 hours
           timeframe: 4 hours
+    exists_series:
+      - /share/Multimedia/series/{{series_name}}/s{{series_season}}/
+  tvsports:
+    include:
+      - sports.yml
  
 tasks:
   tele task:
     template:
       - tvfeeds
-      - tvanime
       - tvseries
+  anime task:
+    template:
+      - animefeeds
+      - tvanime
   live task:
     template:
       - livefeeds
-    accept_all: yes
+      - tvsports

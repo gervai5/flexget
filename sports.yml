@@ -1,0 +1,16 @@
+regexp:
+  accept:
+    - FIFA World Cup 2014:
+        path: /share/Multimedia/series/FIFA World Cup/s2014/
+    - English Premier League:
+        path: /share/Multimedia/series/English Premier League/s2014/
+    - FIFA Confederations Cup:
+        path: /share/Multimedia/series/FIFA Confederation Cup/s2014/
+    - Match of the Day:
+        path: /share/Multimedia/series/Match of the Day/s2014/
+    - Match of the Day Two:
+        path: /share/Multimedia/series/Match of the Day Two/s2014/
+    - UEFA Champions League:
+        path: /share/Multimedia/series/UEFA Champions League/s2014/
+    - NCAA Basketball:
+        path: /share/Multimedia/series/NCAA Basketball/s2014/
